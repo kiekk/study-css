@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>스타일 우선순위(Cascading)</title>
+<style>
+	#banana {
+		color:black;
+	}
+	div {
+		color:orange;
+	}
+	/*  
+		사과가 녹색으로 나오게 하기
+		바나나가 노란색으로 나오게 하기
+		단, 인라인은 사용하지 않습니다.
+	*/
+	div.apple {
+		color:green;
+	}
+	/* p.apple */
+	/* p */
+	p#banana {
+		color: yellow !important;
+	}
+</style>
+</head>
+<body>
+	<p id="banana" class="apple">바나나</p>
+	<div class="apple">사과</div>
+</body>
+</html>

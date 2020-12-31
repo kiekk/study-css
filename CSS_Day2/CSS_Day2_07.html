@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상 클래스와 가상 요소</title>
+    <style>
+        .letter::first-letter {font-size: 60px;}
+        .letter::first-line {color:red;}
+        .list1 li:first-child {color:blue;}
+        .list1 li:last-child {color:green;}
+        .text1::before {content:"여기가 앞이에요.";}
+        .text2::after {content:"여기가 뒤예요.";}
+        /* content는 필수로 작성 */
+        .list2 li:nth-child(odd) {color: deeppink;}
+        .list2 li:nth-child(2) {color: deepskyblue;}
+    </style>
+</head>
+<body>
+    <h2>가상 클래스와 가상 요소</h2>
+    <p class="letter">안녕하세요. 가상 클래스를 공부하고 있습니다.</p>
+    <ul class="list1">
+        <li>first</li>
+        <li>second</li>
+        <li>third</li>
+        <li>fourth</li>
+    </ul>
+    <p class="text1">before</p>
+    <p class="text2">after</p>
+    <ul class="list2">
+        <li>first</li>
+        <li>second</li>
+        <li>third</li>
+        <li>fourth</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+<title>미디어 쿼리 실습</title>
+<style>
+	body{background: #e0f2f1;}
+	/* 전체 크기 가로 1200, 세로 900 */
+	#wrap  {width:1200px; height: 900px; margin: 0 auto;}
+	header, aside, section, footer {text-align: center; font-size: 50px; color: #fff;}
+	header {width:100%; height: 100px; background: olive;line-height: 100px;}
+	aside  {width: 20%; height: 700px; background: blue; float: left;line-height: 700px;}
+	section{width: 80%; height: 700px; background: red; float: left;line-height: 700px;}
+	footer {width:100%; height: 100px; background: green; clear: both;line-height: 100px;}
+	
+	/* 데스크탑 */
+	@media (max-width: 1210px){
+		header::before {content:'1. '; color: #fff; font-size: 50px;}
+		header::after {content:' - 데스크탑'; color: #fff; font-size : 50px;}
+		#wrap {width:99%;}
+	}
+	/* 태블릿 */
+	/* 화면너비 : 768px */
+	@media (max-width: 768px) {
+		header::before {content:'';}
+		header::after {content:'';}
+		section::before {content:'2. '; color: #fff; font-size: 50px;}
+		section::after {content:' - 태블릿'; color: #fff; font-size: 50px;}
+		body {margin: 0; padding: 0;}
+		#wrap {width: 100%;}
+		header, footer {height: 150px; line-height: 150px;}
+		aside, section {height: 900px; line-height: 900px;}
+	}
+	/* 모바일 */
+	/* 화면너비 : 576px */
+	@media (max-width: 576px){
+		section::before {content:'';}
+		section::after {content:'';}
+		footer::before {content:'3. '; color: #fff; font-size: 50px;}
+		footer::after {content:' - 모바일'; color: #fff; font-size: 50px;}
+		header, aside, section, footer {height: 400px; line-height: 400px;}
+		aside, section {float: none; width: 100%;}
+	}
+</style>
+</head>
+<body>
+	<div id="wrap">
+		<header>header</header>
+		<aside>aside</aside>
+		<section>section</section>
+		<footer>footer</footer>
+	</div>
+</body>
+</html>

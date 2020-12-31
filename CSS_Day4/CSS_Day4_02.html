@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border-radius</title>
+    <style>
+        div{
+            width: 300px;
+            height: 200px;
+            margin: 20px;
+            display: inline-block;
+        }
+        .radius1{border:3px solid red;border-radius: 50%;}
+        .radius2{
+            border:3px solid blue;border-radius: 70px / 40px;
+        }
+        .radius3{
+            border:3px solid orange;border-radius: 100px 100px 50px 50px / 30px 30px 100px 100px;
+        }
+    </style>
+</head>
+<body>
+    <h2>border-radius</h2>
+    <div class="radius1"></div>
+    <div class="radius2"></div>
+    <div class="radius3"></div>
+</body>
+</html>

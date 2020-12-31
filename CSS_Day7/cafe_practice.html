@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            width: 580px;
+        }
+        #nav {
+            background-color: black;
+            padding: 0px;
+            margin: 0;
+            color: white;
+        }
+        ul {
+            height: 45px;
+        }
+        ul > li {
+            list-style: none;
+            padding: 20px;
+            display: inline-block;
+            margin-right: 20px;
+        }
+        img {
+            width: 100%;
+        }
+        #side {
+            padding: 20px;
+            height: 300px;
+        }
+        #side2 {
+            padding: 20px;
+            height: 300px;
+            background-color: gold;
+        }
+        #side3 {
+            padding: 20px;
+            height: 300px;
+        }
+        #footer {
+            padding: 20px;
+            height: 50px;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        @media screen and (min-width: 780px){
+            #container {
+                width: 600px;
+                margin: 0;
+            }
+            #side {
+                display: inline-block;
+                width: 250px;
+            }
+            #side2 {
+                display: inline-block;
+                width: 260px;
+            }
+            #side3 {
+                clear: both;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <div id="nav">
+                <ul>
+                    <li>카페 소개</li>
+                    <li>오시는 길</li>
+                    <li>이달의 추천</li>
+                </ul>
+                <img src="/images/header.jpg" alt="카페 이미지">
+            </div>
+        </div>
+        <!-- //header-->
+        <div id="container2">
+            <div id="side">
+                <h2><dt>카페 소개</dt></h2>
+                <p><dd>영업 시간 : 오전 9시 ~ 밤 10시</dd></p>
+                <p><dd>휴무 : 매주 수요일(<i>수요일이 공휴일인 경우 수요일 영업, 다음날 휴무</i>)</dd></p>
+            </div>
+            <div id="side2">
+                <h2><dt>오시는 길</dt></h2>
+                <p><dd>서귀포시 안덕면 사계리 000-000</dd></p>    
+                <p><dd>제주 올레 10코스 산빙산 근처</dd></p>
+            </div>
+        </div>
+        <div id="side3">
+            <h2><dt>이 달의 추천</dt></h2>
+            <h3><dd>핸드드립 아이스 커피</dd></h3>
+            <p><dd>1. 1인분 기준으로 서버에 각 얼음 5조각(한조각은 20cc)넣고 추출을 시작한다.</dd></p>
+            <p><dd>2. 정상시보다 원두의 양은 2배 정도(20g)와 추출액은 얼음 포함해서 200cc까지 내린다.</dd></p>
+            <p><dd>3.아이스 잔에 얼음 6~7개 섞어서 시원하게 마신다.</dd></p>
+        </div>
+        <div id="footer">
+            <h3>My times with Coffee</h3>
+        </div>
+    </div>
+    <!-- //container -->
+</body>
+</html>
