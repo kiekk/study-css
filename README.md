@@ -1,4 +1,4 @@
-# study_css
+# study-css
 css 공부 내용입니다.
 
 ## 공부 기간
